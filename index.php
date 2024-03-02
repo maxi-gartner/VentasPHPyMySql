@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+if(isset($_SESSION['sesion_email'])) {
+  echo "si existe sesion";
+}else{
+  echo "no existe sesion";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
