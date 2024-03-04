@@ -1,3 +1,14 @@
+<?php
+INCLUDE ('../APP/config.php');
+
+session_start();
+
+if(isset($_SESSION['sesion_email'])) {
+  header('Location:' .$URL. 'index.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,10 +1,14 @@
 <?php
 
+INCLUDE ('APP/config.php');
+
 session_start();
+
 if(isset($_SESSION['sesion_email'])) {
-  echo "si existe sesion";
+  echo "si existe sesion de " . $_SESSION['sesion_email'];
 }else{
   echo "no existe sesion";
+  header('Location:' .$URL. 'src/login.php');
 }
 
 ?>
