@@ -1,9 +1,9 @@
 <?php
-INCLUDE ('APP/config.php');
-INCLUDE ('layout/sesion.php');
-INCLUDE ('layout/header.php');
-INCLUDE ('layout/nav.php');
-INCLUDE ('layout/sidebar.php');
+INCLUDE ('../APP/config.php');
+INCLUDE ('../layout/sesion.php');
+INCLUDE ('../layout/header.php');
+INCLUDE ('../layout/nav.php');
+INCLUDE ('../layout/sidebar.php');
 
 ?>
 
@@ -24,4 +24,4 @@ INCLUDE ('layout/sidebar.php');
     </div>
   </div>
 
-<?php INCLUDE('layout/footer.php'); ?>
+<?php INCLUDE('../layout/footer.php'); ?>
