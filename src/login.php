@@ -5,6 +5,8 @@ session_start();
 
 if(isset($_SESSION['sesion_email'])) {
   header('Location:' .$URL. 'index.php');
+}else{
+  
 }
 
 ?>

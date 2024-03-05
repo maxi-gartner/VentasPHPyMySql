@@ -260,6 +260,8 @@ if(isset($_SESSION['sesion_email'])) {
     </div>
     <!-- /.content-header -->
 
+    <a href="<?php echo $URL;  ?>/app/controllers/login/cerrar_sesion.php" class="btn btn-danger">Cerrar Sesion</a>
+
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
