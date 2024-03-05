@@ -20,5 +20,7 @@ if($usuarios){
     //echo "Ingreso correcto";
     header('Location:' .$URL. 'index.php');
 }else{
-    echo "Usuario o contrasenya incorrectos";
+    session_start();
+    $_SESSION['mensaje'] = "Usuario o contrasenya incorrectos";
+    header('Location:' .$URL. 'src/login.php');
 }

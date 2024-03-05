@@ -22,8 +22,25 @@ if(isset($_SESSION['sesion_email'])) {
   <link rel="stylesheet" href="../public/templates/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="../public/templates/AdminLTE-3.2.0/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <link rel="stylesheet" href="../public/templates/AdminLTE-3.2.0/dist/css/adminlte.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="hold-transition login-page">
+
+<?php if(isset($_SESSION['mensaje'])) {
+      $respuesta = $_SESSION['mensaje']; 
+      ?>
+        <script>
+          Swal.fire({
+            icon: "error",
+            text: '<?php echo $respuesta ?>',
+            timer: 1500
+          });
+        </script>
+      <?php
+    }
+    session_destroy();
+  ?>
+
 <div class="login-box">
   <div class="login-logo">
     <a href="../public/templates/AdminLTE-3.2.0/index2.html"><b>Sistema de Ventas</b></a>

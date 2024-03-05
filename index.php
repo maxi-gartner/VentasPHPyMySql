@@ -6,6 +6,7 @@ session_start();
 
 if(isset($_SESSION['sesion_email'])) {
   echo "si existe sesion de " . $_SESSION['sesion_email'];
+  $email_sesion = $_SESSION['sesion_email'];
 }else{
   echo "no existe sesion";
   header('Location:' .$URL. 'src/login.php');
@@ -22,9 +23,20 @@ if(isset($_SESSION['sesion_email'])) {
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <link rel="stylesheet" href="public/templates/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="public/templates/AdminLTE-3.2.0/dist/css/adminlte.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
+
+<script>
+    Swal.fire({
+      position: 'top-end',
+      text: 'Bienvenido al sistema <?php echo $email_sesion; ?>',
+      icon: "success",
+      showConfirmButton: false,
+      timer: 1500
+    });
+</script>
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
