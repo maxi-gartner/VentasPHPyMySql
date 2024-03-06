@@ -29,25 +29,25 @@ INCLUDE ('../layout/sidebar.php');
         <div class="card-body">
           <div class="form-group">
             <label for="exampleInputEmail1">Nombres</label>
-            <input type="text" class="form-control" id="nombres" placeholder="Ingresar nombres">
+            <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Ingresar nombres">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Apellido</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingresar apellido">
+            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresar apellido">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Correo</label>
-            <input type="email" class="form-control" id="email" placeholder="Ingresar email">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar email">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña">
+            <input type="password" class="form-control" id="password_user" name="password_user">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Repita la contraseña</label>
-            <input type="password" class="form-control" id="contraseña">
+            <input type="password" class="form-control" id="password_repeat" name="password_repeat">
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="exampleInputFile">Foto perfil</label>
           <div class="input-group">
           <div class="custom-file">
@@ -56,7 +56,7 @@ INCLUDE ('../layout/sidebar.php');
           </div>
           <div class="input-group-append">
             <span class="input-group-text">Guardar</span>
-          </div>
+          </div> -->
           </div>
           </div>
         </div>

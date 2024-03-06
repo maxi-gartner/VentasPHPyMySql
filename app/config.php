@@ -19,3 +19,6 @@ try {
 }
 
 $URL = "http://localhost/VentasPHPyMySql/";
+
+date_default_timezone_set('America/Argentina/Buenos_Aires');
+$fechaHora = date('Y-m-d H:i:s');
