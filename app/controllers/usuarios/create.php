@@ -12,7 +12,7 @@ if($password_user === $password_repeat){
     $password_encriptada = password_hash($password_user, PASSWORD_BCRYPT, $opciones );
 }else{
     session_start();
-    $_SESSION['mensaje_contraseñas'] = "Las contrasenias no coinciden";
+    $_SESSION['mensaje_error'] = "Las contrasenias no coinciden";
     header('Location:' .$URL. 'paginas/create_user.php');
 }
 
@@ -27,5 +27,5 @@ $sentencia->bindParam(':password_user', $password_encriptada);
 $sentencia->bindParam(':fyh_creacion', $fechaHora);
 $sentencia->execute();
 session_start();
-    $_SESSION['mensaje_creacion'] = "Usuario creado con exito";
+    $_SESSION['mensaje_success'] = "Usuario creado con exito";
     header('Location:' .$URL. 'paginas/create_user.php');

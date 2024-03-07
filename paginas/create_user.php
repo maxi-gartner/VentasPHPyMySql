@@ -4,57 +4,27 @@ INCLUDE ('../layout/sesion.php');
 INCLUDE ('../layout/header.php');
 INCLUDE ('../layout/nav.php');
 INCLUDE ('../layout/sidebar.php');
-if(isset($_SESSION['mensaje_contraseñas'])) {
-    $respuesta = $_SESSION['mensaje_contraseñas']; 
-    ?>
-      <script>
-        Swal.fire({
-          position: "top-end",
-          icon: "error",
-          text: '<?php echo $respuesta ?>',
-          timer: 1000
-        });
-      </script>
-    <?php
-  }
-  unset($_SESSION['mensaje_contraseñas']);
-
-  if(isset($_SESSION['mensaje_creacion'])) {
-    $respuesta_creacion = $_SESSION['mensaje_creacion']; 
-    ?>
-      <script>
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: '<?php echo $respuesta_creacion ?>',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      </script>
-    <?php
-  }
-  unset($_SESSION['mensaje_creacion']);
+INCLUDE ('../app/alerts.php');
 
 ?>
 
-  <!-- Contenido (titulo) -->
-  <div class="content-wrapper">
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-12">
-            <h1 class="m-0">Starter Page</h1>
-          </div>
+<!-- Contenido (titulo) -->
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-12">
+          <h1 class="m-0">Starter Page</h1>
         </div>
       </div>
     </div>
-    <!-- Main content -->
-    <div class="content">
-      <div class="card card-primary col-sm-8">
-        <div class="card-header">
-          <h3 h3 class="card-title">Quick Example</h3>
-        </div>
-
+  </div>
+  <!-- Main content -->
+  <div class="content">
+    <div class="card card-primary col-sm-8">
+      <div class="card-header">
+        <h3 h3 class="card-title">Quick Example</h3>
+      </div>
       <form action="../app/controllers/usuarios/create.php" method="post">
         <div class="card-body">
           <div class="form-group">

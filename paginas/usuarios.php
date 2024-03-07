@@ -10,10 +10,12 @@ INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php')
 
   <!-- Contenido (titulo) -->
   <div class="content-wrapper">
-    <div class="container-fluid">
-      <div class="row mb-2">
-        <div class="content-header col-sm-12">
-          <h1 class="m-0">Starter Page</h1>
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-12">
+            <h1 class="m-0">Starter Page</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -21,15 +23,8 @@ INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php')
     <div class="content">
       <div class="card card-primary col-sm-12">
         <div class="card-header">
-          <h3 class="card-title">Usuarios registrados</h3>
-        <div class="card-tools">
-          <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+          <h3 h3 class="card-title">Usuarios registrados</h3>
         </div>
-      </div>
-
-        <div class="card-body" style="display: block;">
-        <table id="table_usuarios" class="table table-bordered table-hover table-striped table-sm">
-        </table>
         <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
@@ -37,11 +32,13 @@ INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php')
                     <th><center>Nombre</center></th>
                     <th><center>Apellido</center></th>
                     <th><center>Email</center></th>
+                    <th><center>Acciones</center></th>
                   </tr>
                   <tbody>
                     <?php 
                     $contador = 0;
                     foreach ($datos_usuarios as $dato_usuario) {
+                        $id_user = $dato_usuario['id_usuario'];
                         $nro = $contador += 1;
                         $nombre = $dato_usuario['nombres'];
                         $apellido = $dato_usuario['apellido'];
@@ -52,6 +49,15 @@ INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php')
                           <td><?= $nombre ?></td>
                           <td><?= $apellido ?></td>
                           <td><?= $email ?></td>
+                          <td>
+                            <center>
+                            <div class="btn-group">
+                              <a href="<?php echo $URL ?>paginas/details_user.php?id=<?= $id_user ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
+                              <button type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</button>
+                              <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i> Borrar</button>
+                            </div>
+                            </center>
+                          </td>
                         </tr>
                         <?php
                     }
@@ -67,8 +73,53 @@ INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php')
 <script>
   $(function () {
     $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      "pageLength": 5,
+      "language": {
+        "emptyTable": "No hay datos disponibles",
+        "info": "Mostrando _START_ a _END_ de _TOTAL_ Usuarios",
+        "infoEmpty": "Mostrando 0 a 0 de 0 Usuarios",
+        "infoFiltered": "(filtered from _MAX_ total entries)",
+        "infoPostFix": "",
+        "thousands": ",",
+        "lengthMenu": "Mostrar _MENU_ Usuarios",
+        "loadingRecords": "Cargando...",
+        "processing": "Procesando...",
+        "search": "Buscar:",
+        "zeroRecords": "No se encontraron coincidencias",
+        "paginate": {
+          "first": "Primero",
+          "last": "Ultimo",
+          "next": "Siguiente",
+          "previous": "Anterior"
+        }
+      },
+      "responsive": true, 
+      "lengthChange": true, 
+      "autoWidth": false,
+      buttons: [{
+        extend: 'collection',
+        text: 'Reportes',
+        orientacion: 'landscape',
+        buttons: [{
+          text: 'Copiar',
+          extend: 'copy',
+        },{
+          extend:'pdf',
+        },{
+          extend: 'excel',
+        },{
+          extend: 'csv',
+        },{
+          text: 'Imprimir',
+          extend: 'print',
+        }
+        ]
+        },{
+          extend: 'colvis',
+          text: 'Visor de columnas',
+          collectionsLayout: 'fixed three-column'
+        }
+      ],
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
   });
 </script>

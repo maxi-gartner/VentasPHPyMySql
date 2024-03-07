@@ -26,21 +26,7 @@ if(isset($_SESSION['sesion_email'])) {
 </head>
 <body class="hold-transition login-page">
 
-<?php if(isset($_SESSION['mensaje'])) {
-      $respuesta = $_SESSION['mensaje']; 
-      ?>
-        <script>
-          Swal.fire({
-            position: "top-end",
-            icon: "error",
-            text: '<?php echo $respuesta ?>',
-            timer: 1000
-          });
-        </script>
-      <?php
-    }
-    session_destroy();
-  ?>
+<?php INCLUDE ('../APP/alerts.php'); ?>
 
 <div class="login-box">
   <div class="login-logo">
