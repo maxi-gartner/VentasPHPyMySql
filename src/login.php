@@ -31,9 +31,10 @@ if(isset($_SESSION['sesion_email'])) {
       ?>
         <script>
           Swal.fire({
+            position: "top-end",
             icon: "error",
             text: '<?php echo $respuesta ?>',
-            timer: 1500
+            timer: 1000
           });
         </script>
       <?php

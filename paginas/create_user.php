@@ -4,6 +4,36 @@ INCLUDE ('../layout/sesion.php');
 INCLUDE ('../layout/header.php');
 INCLUDE ('../layout/nav.php');
 INCLUDE ('../layout/sidebar.php');
+if(isset($_SESSION['mensaje_contraseñas'])) {
+    $respuesta = $_SESSION['mensaje_contraseñas']; 
+    ?>
+      <script>
+        Swal.fire({
+          position: "top-end",
+          icon: "error",
+          text: '<?php echo $respuesta ?>',
+          timer: 1000
+        });
+      </script>
+    <?php
+  }
+  unset($_SESSION['mensaje_contraseñas']);
+
+  if(isset($_SESSION['mensaje_creacion'])) {
+    $respuesta_creacion = $_SESSION['mensaje_creacion']; 
+    ?>
+      <script>
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: '<?php echo $respuesta_creacion ?>',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      </script>
+    <?php
+  }
+  unset($_SESSION['mensaje_creacion']);
 
 ?>
 
@@ -62,7 +92,7 @@ INCLUDE ('../layout/sidebar.php');
         </div>
 
         <div class="card-footer">
-            <a href="#" class="btn btn-secondary" id="">Cancelar</a>
+            <a href="<?php echo $URL?>paginas/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>

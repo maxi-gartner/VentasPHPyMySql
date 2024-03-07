@@ -2,8 +2,8 @@
 
 INCLUDE('../../config.php');
 
-$nombres = $_POST['nombres'];
-$apellido = $_POST['apellido'];
+$nombres = mb_strtolower($_POST['nombres']);
+$apellido = mb_strtolower($_POST['apellido']);
 $email = $_POST['email'];
 $password_user = $_POST['password_user'];
 $password_repeat = $_POST['password_repeat'];
@@ -11,7 +11,9 @@ if($password_user === $password_repeat){
     $opciones = ['cost' => 10];
     $password_encriptada = password_hash($password_user, PASSWORD_BCRYPT, $opciones );
 }else{
-    echo "Las contraseñas no coinciden";
+    session_start();
+    $_SESSION['mensaje_contraseñas'] = "Las contrasenias no coinciden";
+    header('Location:' .$URL. 'paginas/create_user.php');
 }
 
 $sentencia = $pdo->prepare("INSERT INTO tb_usuarios 
@@ -24,3 +26,6 @@ $sentencia->bindParam(':email', $email);
 $sentencia->bindParam(':password_user', $password_encriptada);
 $sentencia->bindParam(':fyh_creacion', $fechaHora);
 $sentencia->execute();
+session_start();
+    $_SESSION['mensaje_creacion'] = "Usuario creado con exito";
+    header('Location:' .$URL. 'paginas/create_user.php');
