@@ -30,7 +30,6 @@ INCLUDE ('../app/controllers/usuarios/details_user_controller.php')
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th><center>Nro</center></th>
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Email</th>
@@ -40,10 +39,8 @@ INCLUDE ('../app/controllers/usuarios/details_user_controller.php')
                 </thead>
                 <tbody>
                 <?php 
-                    $contador = 0;
                     foreach ($data_details_user as $datos_usuario) {
                         $id_user = $datos_usuario['id_usuario'];
-                        $nro = $contador += 1;
                         $nombre = $datos_usuario['nombres'];
                         $apellido = $datos_usuario['apellido'];
                         $email = $datos_usuario['email'];
@@ -51,7 +48,6 @@ INCLUDE ('../app/controllers/usuarios/details_user_controller.php')
                         $fyh_actualizacion = $datos_usuario['fyh_actualizacion'];
                         ?>
                         <tr>
-                            <td><center><?= $nro ?></center></td></td>
                             <td><?= $nombre ?></td>
                             <td><?= $apellido ?></td>
                             <td><?= $email ?></td>

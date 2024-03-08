@@ -7,6 +7,7 @@ $apellido = mb_strtolower($_POST['apellido']);
 $email = $_POST['email'];
 $password_user = $_POST['password_user'];
 $password_repeat = $_POST['password_repeat'];
+
 if($password_user === $password_repeat){
     $opciones = ['cost' => 10];
     $password_encriptada = password_hash($password_user, PASSWORD_BCRYPT, $opciones );

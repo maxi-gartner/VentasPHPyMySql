@@ -4,7 +4,9 @@ INCLUDE ('../layout/sesion.php');
 INCLUDE ('../layout/header.php');
 INCLUDE ('../layout/nav.php');
 INCLUDE ('../layout/sidebar.php');
-INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php')
+INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php');
+
+INCLUDE ('../app/alerts.php');
 
 ?>
 
@@ -53,7 +55,7 @@ INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php')
                             <center>
                             <div class="btn-group">
                               <a href="<?php echo $URL ?>paginas/details_user.php?id=<?= $id_user ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
-                              <button type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</button>
+                              <a href="<?php echo $URL ?>paginas/update_user.php?id=<?= $id_user ?>" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
                               <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i> Borrar</button>
                             </div>
                             </center>
