@@ -29,23 +29,23 @@ INCLUDE ('../app/alerts.php');
         <div class="card-body">
           <div class="form-group">
             <label for="exampleInputEmail1">Nombres</label>
-            <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Ingresar nombres">
+            <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Ingresar nombres" required>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Apellido</label>
-            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresar apellido">
+            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresar apellido" required>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Correo</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar email">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar email" required>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password" class="form-control" id="password_user" name="password_user">
+            <input type="password" class="form-control" id="password_user" name="password_user" required>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Repita la contraseña</label>
-            <input type="password" class="form-control" id="password_repeat" name="password_repeat">
+            <input type="password" class="form-control" id="password_repeat" name="password_repeat" required>
           </div>
           <!-- <div class="form-group">
             <label for="exampleInputFile">Foto perfil</label>

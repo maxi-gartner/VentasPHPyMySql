@@ -56,7 +56,11 @@ INCLUDE ('../app/alerts.php');
                             <div class="btn-group">
                               <a href="<?php echo $URL ?>paginas/details_user.php?id=<?= $id_user ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
                               <a href="<?php echo $URL ?>paginas/update_user.php?id=<?= $id_user ?>" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
-                              <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i> Borrar</button>
+                              <form action="../app/controllers/usuarios/delete.php" method="post" style="display: inline;">
+                                  <input type="hidden" name="id_usuario" value="<?= $id_user ?>">
+                                  <input type="hidden" name="nombre_usuario" value="<?= $nombre ?>">
+                                  <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i> Borrar</button>
+                              </form>
                             </div>
                             </center>
                           </td>

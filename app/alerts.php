@@ -55,3 +55,27 @@ if(isset($_SESSION['mensaje_error'])) {
         <?php
     }
     unset($_SESSION['login_success']);
+
+    //alerta borrar datos
+
+    if(isset($_SESSION['alert_delete'])) {
+        $respuesta_creacion = $_SESSION['alert_delete']; 
+        ?>
+        <script>
+            Swal.fire({
+                title: "¿Estás seguro de borrar este registro?",
+                text: "<?php echo $respuesta_creacion ?>",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Si, borrar",
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    
+                }
+                });
+        </script>
+        <?php
+    }
+    unset($_SESSION['alert_delete']);
