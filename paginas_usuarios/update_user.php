@@ -22,7 +22,7 @@ INCLUDE ('../app/controllers/usuarios/update_user_read.php');
 </div>
 <!-- Main content -->
 <div class="content">
-    <div class="card card-success col-sm-8">
+    <div class="card card-warning col-sm-8">
     <div class="card-header">
         <h3 h3 class="card-title">Editar usuario</h3>
     </div>
@@ -36,6 +36,10 @@ INCLUDE ('../app/controllers/usuarios/update_user_read.php');
         <div class="form-group">
             <label for="exampleInputEmail1">Apellido</label>
             <input type="text" class="form-control" id="apellido" name="apellido" value="<?php echo $apellido; ?>">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Rol</label>
+            <input type="text" class="form-control" id="id_rol" name="id_rol" value="<?php echo $id_rol; ?>">
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1">Correo</label>
@@ -64,8 +68,8 @@ INCLUDE ('../app/controllers/usuarios/update_user_read.php');
         </div>
 
         <div class="card-footer">
-            <a href="<?php echo $URL?>paginas/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
-            <button type="submit" class="btn btn-success">Actualizar</button>
+            <a href="<?php echo $URL?>paginas_usuarios/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
+            <button type="submit" class="btn btn-warning">Actualizar</button>
         </div>
     </form>
     </div>

@@ -14,7 +14,7 @@ INCLUDE ('../app/alerts.php');
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-12">
-          <h1 class="m-0">Starter Page</h1>
+          <h1 class="m-0">Creación de un nuevo usuario</h1>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@ INCLUDE ('../app/alerts.php');
   <div class="content">
     <div class="card card-primary col-sm-8">
       <div class="card-header">
-        <h3 h3 class="card-title">Quick Example</h3>
+        <h3 h3 class="card-title">Datos del usuario</h3>
       </div>
       <form action="../app/controllers/usuarios/create.php" method="post">
         <div class="card-body">
@@ -34,6 +34,10 @@ INCLUDE ('../app/alerts.php');
           <div class="form-group">
             <label for="exampleInputEmail1">Apellido</label>
             <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresar apellido" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Rol</label>
+            <input type="text" class="form-control" id="id_rol" name="id_rol" placeholder="Ingresar rol" required>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Correo</label>
@@ -62,7 +66,7 @@ INCLUDE ('../app/alerts.php');
         </div>
 
         <div class="card-footer">
-            <a href="<?php echo $URL?>paginas/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
+            <a href="<?php echo $URL?>paginas_usuarios/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>

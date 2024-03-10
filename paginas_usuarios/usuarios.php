@@ -16,7 +16,7 @@ INCLUDE ('../app/alerts.php');
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1 class="m-0">Starter Page</h1>
+            <h1 class="m-0">Listado de usuarios</h1>
           </div>
         </div>
       </div>
@@ -54,12 +54,12 @@ INCLUDE ('../app/alerts.php');
                           <td>
                             <center>
                             <div class="btn-group">
-                              <a href="<?php echo $URL ?>paginas/details_user.php?id=<?= $id_user ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
-                              <a href="<?php echo $URL ?>paginas/update_user.php?id=<?= $id_user ?>" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
+                              <a href="<?php echo $URL ?>paginas_usuarios/details_user.php?id=<?= $id_user ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
+                              <a href="<?php echo $URL ?>paginas_usuarios/update_user.php?id=<?= $id_user ?>" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
                               <form action="../app/controllers/usuarios/delete.php" method="post" style="display: inline;">
                                   <input type="hidden" name="id_usuario" value="<?= $id_user ?>">
                                   <input type="hidden" name="nombre_usuario" value="<?= $nombre ?>">
-                                  <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i> Borrar</button>
+                                  <button type="button" class="btn btn-danger deleteButton" value="<?= $nombre ?>" id="<?php echo $id_user ?>"><i class="fas fa-trash"></i> Borrar</button>
                               </form>
                             </div>
                             </center>
@@ -75,6 +75,37 @@ INCLUDE ('../app/alerts.php');
   </div>
 
 <?php INCLUDE('../layout/footer.php'); ?>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const deleteButtons = document.querySelectorAll('.deleteButton');
+
+    //console.log(deleteButtons);
+    deleteButtons.forEach(function(button) {
+      console.log(button.id);
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const id_usuario = button.id;
+            const nombre_usuario = button.value;
+
+            Swal.fire({
+                title: "¿Estás seguro de borrar este registro?",
+                text: "El usuario " + nombre_usuario + " se eliminará de forma permanente",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Si, borrar",
+                }).then((result) => {
+                if (result.isConfirmed) {
+                  // Obtieniendo el formulario asociado al botón
+                  const formulario = button.closest('form');
+                  formulario.submit();
+                  }
+                });
+        });
+    });
+});
+</script>
   
 <script>
   $(function () {

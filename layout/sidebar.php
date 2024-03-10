@@ -31,15 +31,39 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas/usuarios.php" class="nav-link">
+                <a href="<?php echo $URL;  ?>/paginas_usuarios/usuarios.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Usuarios</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas/create_user.php" class="nav-link">
+                <a href="<?php echo $URL;  ?>/paginas_usuarios/create_user.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Creacion de usuarios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- roles -->
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-address-book"></i>
+              <p>
+                Roles
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo $URL;  ?>/paginas_roles/roles.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista de Roles</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo $URL;  ?>/paginas_roles/create_roles.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Creacion de rol</p>
                 </a>
               </li>
             </ul>
@@ -52,6 +76,7 @@
               </p>
             </a>
           </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

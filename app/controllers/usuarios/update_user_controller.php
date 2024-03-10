@@ -16,7 +16,7 @@ if (!empty($password_user) && $password_user === $password_repeat) {
 } elseif (!empty($password_user) && $password_user !== $password_repeat) {
     session_start();
     $_SESSION['mensaje_error'] = "Las contraseñas no coinciden";
-    header('Location:' . $URL . 'paginas/update_user.php?id=' . $id_usuario);
+    header('Location:' . $URL . 'paginas_usuarios/update_user.php?id=' . $id_usuario);
     exit; // Evita que se ejecute el resto del código
 }
 
@@ -52,4 +52,4 @@ $sentencia->execute();
 
 session_start();
 $_SESSION['mensaje_success'] = "Se actualizaron los datos del usuario con éxito";
-header('Location:' . $URL . 'paginas/usuarios.php');
+header('Location:' . $URL . 'paginas_usuarios/usuarios.php');

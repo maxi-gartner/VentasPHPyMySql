@@ -11,5 +11,6 @@ foreach ($data_details_user as $datos_usuario) {
     $nombre = $datos_usuario['nombres'];
     $apellido = $datos_usuario['apellido'];
     $email = $datos_usuario['email'];
+    $id_rol = $datos_usuario['id_rol'];
     }
 

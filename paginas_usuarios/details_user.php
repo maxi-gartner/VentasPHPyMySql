@@ -16,16 +16,28 @@ INCLUDE ('../app/controllers/usuarios/details_user_controller.php')
         <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-12">
-            <h1 class="m-0">Starter Page</h1>
+            <h1 class="m-0">Detalles del usuarios</h1>
             </div>
         </div>
         </div>
     </div>
     <!-- Main content -->
     <div class="content">
-        <div class="card card-primary col-sm-12">
+        <div class="card card-success col-sm-12">
         <div class="card-header">
-            <h3 h3 class="card-title">Detalles del usuario</h3>
+
+        <?php 
+                    foreach ($data_details_user as $datos_usuario) {
+                        $id_user = $datos_usuario['id_usuario'];
+                        $nombre = $datos_usuario['nombres'];
+                        $apellido = $datos_usuario['apellido'];
+                        $email = $datos_usuario['email'];
+                        $id_rol = $datos_usuario['id_rol'];
+                        $fyh_creacion = $datos_usuario['fyh_creacion'];
+                        $fyh_actualizacion = $datos_usuario['fyh_actualizacion'];
+                        ?>
+
+            <h3 h3 class="card-title">Usuario: <?php echo ucfirst($nombre) . " " . ucfirst($apellido) ?> </h3>
         </div>
             <table class="table table-bordered table-hover">
                 <thead>
@@ -33,24 +45,17 @@ INCLUDE ('../app/controllers/usuarios/details_user_controller.php')
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Email</th>
+                        <th>Rol</th>
                         <th>Fecha y Hora de Creacion</th>
                         <th>Fecha y Hora de Actualizacion</th>
                     </tr>
                 </thead>
                 <tbody>
-                <?php 
-                    foreach ($data_details_user as $datos_usuario) {
-                        $id_user = $datos_usuario['id_usuario'];
-                        $nombre = $datos_usuario['nombres'];
-                        $apellido = $datos_usuario['apellido'];
-                        $email = $datos_usuario['email'];
-                        $fyh_creacion = $datos_usuario['fyh_creacion'];
-                        $fyh_actualizacion = $datos_usuario['fyh_actualizacion'];
-                        ?>
                         <tr>
                             <td><?= $nombre ?></td>
                             <td><?= $apellido ?></td>
                             <td><?= $email ?></td>
+                            <td><?= $id_rol ?></td>
                             <td><?= $fyh_creacion ?></td>
                             <td><?= $fyh_actualizacion ?></td>
                             </tr>
