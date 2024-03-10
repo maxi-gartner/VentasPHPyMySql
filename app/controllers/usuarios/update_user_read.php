@@ -13,4 +13,3 @@ foreach ($data_details_user as $datos_usuario) {
     $email = $datos_usuario['email'];
     $id_rol = $datos_usuario['id_rol'];
     }
-

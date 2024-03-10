@@ -4,7 +4,7 @@ INCLUDE ('../layout/sesion.php');
 INCLUDE ('../layout/header.php');
 INCLUDE ('../layout/nav.php');
 INCLUDE ('../layout/sidebar.php');
-INCLUDE ('../app/controllers/usuarios/listado_de_usuarios.php');
+INCLUDE ('../app/controllers/usuarios/read_user_controller.php');
 
 INCLUDE ('../app/alerts.php');
 
@@ -56,7 +56,7 @@ INCLUDE ('../app/alerts.php');
                             <div class="btn-group">
                               <a href="<?php echo $URL ?>paginas_usuarios/details_user.php?id=<?= $id_user ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
                               <a href="<?php echo $URL ?>paginas_usuarios/update_user.php?id=<?= $id_user ?>" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
-                              <form action="../app/controllers/usuarios/delete.php" method="post" style="display: inline;">
+                              <form action="../app/controllers/usuarios/delete_user_controller.php" method="post" style="display: inline;">
                                   <input type="hidden" name="id_usuario" value="<?= $id_user ?>">
                                   <input type="hidden" name="nombre_usuario" value="<?= $nombre ?>">
                                   <button type="button" class="btn btn-danger deleteButton" value="<?= $nombre ?>" id="<?php echo $id_user ?>"><i class="fas fa-trash"></i> Borrar</button>
