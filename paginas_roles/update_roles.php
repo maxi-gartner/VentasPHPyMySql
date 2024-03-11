@@ -26,11 +26,12 @@ INCLUDE ('../app/controllers/roles/update_roles_read.php');
     <div class="card-header">
         <h3 h3 class="card-title">Datos editables</h3>
     </div>
-    <form action="../app/controllers/roles/update_roles_controller.php.php" method="post">
+    <form action="../app/controllers/roles/update_roles_controller.php" method="post">
         <div class="card-body">
+        <input type="hidden" name="id_rol" value="<?php echo $id_rol_get; ?>">
         <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" name="nombre" value="<?php echo $id_rol_get; ?>">
+            <input type="text" class="form-control" name="nombre" value="<?php echo $nombre_rol; ?>">
         </div>
         <div class="form-group">
             <label for="restricciones">Restricciones</label>

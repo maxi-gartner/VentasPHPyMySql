@@ -8,6 +8,7 @@ $data_details_rol = $query_rol->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($data_details_rol as $datos_rol) {
     $id_rol_get = $datos_rol['id_rol'];
+    $nombre_rol = $datos_rol['rol'];
     $restricciones_get = $datos_rol['restricciones'];
     }
 
