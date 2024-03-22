@@ -5,6 +5,7 @@ include('../../config.php');
 $nombres = $_POST['nombres'];
 $apellido = $_POST['apellido'];
 $email = $_POST['email'];
+$id_rol = $_POST['id_rol'];
 $password_user = $_POST['password_user'];
 $password_repeat = $_POST['password_repeat'];
 $id_usuario = $_POST['id_usuario'];
@@ -25,6 +26,7 @@ $sql = "UPDATE tb_usuarios
     SET nombres = :nombres, 
         apellido = :apellido, 
         email = :email,
+        id_rol = :id_rol, 
         fyh_actualizacion = :fyh_actualizacion";
 
 // Si se proporcionó una nueva contraseña, se añade la actualización de la contraseña a la consulta SQL
@@ -40,6 +42,7 @@ $sentencia = $pdo->prepare($sql);
 $sentencia->bindParam(':nombres', $nombres);
 $sentencia->bindParam(':apellido', $apellido);
 $sentencia->bindParam(':email', $email);
+$sentencia->bindParam(':id_rol', $id_rol);
 $sentencia->bindParam(':fyh_actualizacion', $fechaHora);
 $sentencia->bindParam(':id_usuario', $id_usuario);
 
