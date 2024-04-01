@@ -41,7 +41,7 @@ $sentencia = $pdo->prepare($sql);
 // Asignar valores a los parámetros 
 $sentencia->bindParam(':nombres', $nombres);
 $sentencia->bindParam(':apellido', $apellido); 
-$sentencia->bindParam(':email', $email);
+$sentencia->bindParam(':email', $email);  
 $sentencia->bindParam(':id_rol', $id_rol);   
 $sentencia->bindParam(':fyh_actualizacion', $fechaHora);
 $sentencia->bindParam(':id_usuario', $id_usuario);
