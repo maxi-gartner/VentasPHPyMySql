@@ -38,7 +38,7 @@ $sql .= " WHERE id_usuario = :id_usuario";
 
 $sentencia = $pdo->prepare($sql);
 
-// Asignar valores a los parámetros
+// Asignar valores a los parámetros 
 $sentencia->bindParam(':nombres', $nombres);
 $sentencia->bindParam(':apellido', $apellido); 
 $sentencia->bindParam(':email', $email);
