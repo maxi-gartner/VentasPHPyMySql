@@ -43,8 +43,8 @@ $sentencia->bindParam(':nombres', $nombres);
 $sentencia->bindParam(':apellido', $apellido); 
 $sentencia->bindParam(':email', $email);  
 $sentencia->bindParam(':id_rol', $id_rol);    
-$sentencia->bindParam(':fyh_actualizacion', $fechaHora);
-$sentencia->bindParam(':id_usuario', $id_usuario);
+$sentencia->bindParam(':fyh_actualizacion', $fechaHora); 
+$sentencia->bindParam(':id_usuario', $id_usuario); 
 
 // Si se proporcionó una nueva contraseña, se asigna a los parámetros
 if (!empty($password_encriptada)) {
