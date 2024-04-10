@@ -50,7 +50,7 @@ $sentencia->bindParam(':id_usuario', $id_usuario);
 if (!empty($password_encriptada)) {
     $sentencia->bindParam(':password_user', $password_encriptada);
 }
-
+ 
 $sentencia->execute();
 
 session_start();
