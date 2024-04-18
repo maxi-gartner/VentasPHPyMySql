@@ -5,6 +5,7 @@ INCLUDE ('../layout/header.php');
 INCLUDE ('../layout/nav.php');
 INCLUDE ('../layout/sidebar.php');
 INCLUDE ('../app/alerts.php');
+include ('../app/controllers/roles/read_roles_controller.php');
 
 ?>
 
@@ -25,7 +26,7 @@ INCLUDE ('../app/alerts.php');
       <div class="card-header">
         <h3 h3 class="card-title">Datos del usuario</h3>
       </div>
-      <form action="../app/controllers/usuarios/create.php" method="post">
+      <form action="../app/controllers/usuarios/create_user_controller.php" method="post">
         <div class="card-body">
           <div class="form-group">
             <label for="exampleInputEmail1">Nombres</label>
@@ -36,12 +37,17 @@ INCLUDE ('../app/alerts.php');
             <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresar apellido" required>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Rol</label>
-            <input type="text" class="form-control" id="id_rol" name="id_rol" placeholder="Ingresar rol" required>
-          </div>
-          <div class="form-group">
             <label for="exampleInputEmail1">Correo</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar email" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Rol</label>
+            <select name="id_rol" id="" class="form-control" required>
+              <?php foreach ($datos_roles as $dato_rol) { ?>
+                <option value="<?php echo $dato_rol['id_rol']; ?>"><?php echo $dato_rol['rol']; ?></option>
+              <?php
+                }?>
+            </select>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Contraseña</label>

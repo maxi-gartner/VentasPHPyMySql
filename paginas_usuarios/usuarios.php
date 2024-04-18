@@ -34,6 +34,7 @@ INCLUDE ('../app/alerts.php');
                     <th><center>Nombre</center></th>
                     <th><center>Apellido</center></th>
                     <th><center>Email</center></th>
+                    <th><center>Rol</center></th>
                     <th><center>Acciones</center></th>
                   </tr>
                   <tbody>
@@ -45,12 +46,14 @@ INCLUDE ('../app/alerts.php');
                         $nombre = $dato_usuario['nombres'];
                         $apellido = $dato_usuario['apellido'];
                         $email = $dato_usuario['email'];
+                        $rol = $dato_usuario['rol'];
                         ?>
                         <tr>
                           <td><center><?= $nro ?></center></td></td>
-                          <td><?= $nombre ?></td>
-                          <td><?= $apellido ?></td>
+                          <td><?= ucfirst($nombre) ?></td>
+                          <td><?= ucfirst($apellido) ?></td>
                           <td><?= $email ?></td>
+                          <td><?= ucfirst($rol) ?></td>
                           <td>
                             <center>
                             <div class="btn-group">

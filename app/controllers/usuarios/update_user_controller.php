@@ -38,16 +38,16 @@ $sql .= " WHERE id_usuario = :id_usuario";
 
 $sentencia = $pdo->prepare($sql);
 
-// Asignar valores a los parámetros 
+// Asignar valores a los parámetros
 $sentencia->bindParam(':nombres', $nombres);
-$sentencia->bindParam(':apellido', $apellido); 
-$sentencia->bindParam(':email', $email);  
-$sentencia->bindParam(':id_rol', $id_rol);       
-$sentencia->bindParam(':fyh_actualizacion', $fechaHora);  
-$sentencia->bindParam(':id_usuario', $id_usuario);   
+$sentencia->bindParam(':apellido', $apellido);
+$sentencia->bindParam(':email', $email);
+$sentencia->bindParam(':id_rol', $id_rol);
+$sentencia->bindParam(':fyh_actualizacion', $fechaHora);
+$sentencia->bindParam(':id_usuario', $id_usuario);
  
-// Si se proporcionó una nueva contraseña, se asigna a los parámetros  
-if (!empty($password_encriptada)) { 
+// Si se proporcionó una nueva contraseña, se asigna a los parámetros
+if (!empty($password_encriptada)) {
     $sentencia->bindParam(':password_user', $password_encriptada);
 }
  
