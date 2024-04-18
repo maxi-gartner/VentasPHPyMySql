@@ -69,6 +69,52 @@
             </ul>
           </li>
           <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-layer-group"></i>
+              <p>
+                Categorías
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo $URL;  ?>/paginas_roles/roles.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista de Categorías</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo $URL;  ?>/paginas_roles/create_roles.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Creacion de Categorías</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tags"></i>
+              <p>
+                Productos
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo $URL;  ?>/paginas_roles/roles.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista de Productos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo $URL;  ?>/paginas_roles/create_roles.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Creacion de Productos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
             <a href="<?php echo $URL;  ?>/app/controllers/login/cerrar_sesion.php" class="nav-link" style= "background-color: #a71002;">
               <i class="nav-icon fas fa-door-closed"></i>
               <p>
