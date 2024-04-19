@@ -32,8 +32,8 @@ if(isset($_SESSION['sesion_email'])) {
   <div class="login-logo">
     <a href="../public/templates/AdminLTE-3.2.0/index2.html"><b>Sistema de Ventas</b></a>
   </div>
-  <div class="card">
-    <div class="card-body login-card-body">
+  <div class="card ">
+    <div class="card-body ">
       <p class="login-box-msg">Inicia sesión</p>
 
       <form action="../app/controllers/login/ingreso.php" method="post">
@@ -67,22 +67,11 @@ if(isset($_SESSION['sesion_email'])) {
           </div>
         </div>
       </form>
-
-      <div class="social-auth-links text-center mb-3">
-        <p>- O -</p>
-        <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i> Ingresar con Facebook
-        </a>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i> Ingresar con Google+
-        </a>
-      </div>
-
       <p class="mb-1">
         <a href="forgot-password.html">Olvidé mi contraseña</a>
       </p>
       <p class="mb-0">
-        <a href="register.html" class="text-center">Registrarme</a>
+        <a href="./register.php" class="text-center">Registrarme</a>
       </p>
     </div>
   </div>
