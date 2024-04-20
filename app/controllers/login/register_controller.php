@@ -31,4 +31,4 @@ $sentencia->bindParam(':fyh_creacion', $fechaHora);
 $sentencia->execute();
 session_start();
     $_SESSION['mensaje_success'] = "Usuario creado con exito";
-    header('Location:' .$URL. 'index.php');
+    header('Location:' .$URL. 'src/login.php');
