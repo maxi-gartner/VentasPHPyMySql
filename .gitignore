@@ -29,3 +29,4 @@ node_modules
 .env
 .vscode
 package-lock.json
+.vercel
