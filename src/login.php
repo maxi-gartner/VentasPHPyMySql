@@ -1,5 +1,7 @@
 <?php
 INCLUDE ('../APP/config.php');
+INCLUDE ('../APP/alerts.php');
+
 
 session_start();
 
@@ -17,68 +19,29 @@ if(isset($_SESSION['sesion_email'])) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Log in</title>
-  <link rel="stylesheet" href="./output.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <link rel="stylesheet" href="../public/templates/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="../public/templates/AdminLTE-3.2.0/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <link rel="stylesheet" href="../public/templates/AdminLTE-3.2.0/dist/css/adminlte.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/frytyler/pen/EGdtg" />
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
+  <link rel="stylesheet" href="../public/css/login.css">
+
 </head>
-<body class="hold-transition login-page">
-
-<?php INCLUDE ('../APP/alerts.php'); ?>
-
-<div class="login-box">
-  <div class="login-logo">
-    <a href="../public/templates/AdminLTE-3.2.0/index2.html"><b>Sistema de Ventas</b></a>
-  </div>
-  <div class="card ">
-    <div class="card-body ">
-      <p class="login-box-msg">Inicia sesión</p>
-
+<body>
+  <div class="login">
+    <h1>Login</h1>
       <form action="../app/controllers/login/ingreso.php" method="post">
-        <div class="input-group mb-3">
-          <input type="email" name="email" class="form-control" placeholder="Email">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="password" name="password_user" class="form-control" placeholder="Password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Recordarme
-              </label>
-            </div>
-          </div>
-          <div class="col-6">
-            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
-          </div>
-        </div>
+        <input type="text" name="email" placeholder="Email" required="required" />
+          <input type="password" name="password_user" placeholder="Contraseña" required="required" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Iniciar sesión</button>
       </form>
-      <p class="mb-1">
-        <a href="forgot-password.html">Olvidé mi contraseña</a>
-      </p>
+  <!--     <p class="mb-1">
+        <a class="text-white text-decoration-none" href="forgot-password.html">Olvidé mi contraseña</a>
+      </p> -->
       <p class="mb-0">
-        <a href="./register.php" class="text-center">Registrarme</a>
+        <a style="color: white; text-decoration: none;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='white'" href="./register.php">Registrarme</a>
       </p>
-    </div>
   </div>
-</div>
-
-<script src="../public/templates/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
-<script src="../public/templates/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../public/templates/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
-</body>
-</html>
+  </body>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+<script >
+</script>
+</body></html>

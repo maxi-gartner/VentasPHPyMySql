@@ -1,0 +1,103 @@
+.containerModal {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.modal {
+  background-color: rgba(240, 248, 255, 0.9);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 10px;
+  width: 34%; /* Ocupa el 34% de la pantalla a lo ancho */
+  max-width: 500px; /* Máximo ancho del modal */
+  height: 80vh; /* Ocupa el 80% de la pantalla a lo alto */
+  max-height: 80vh; /* Máximo alto del modal */
+  overflow-y: auto; /* Agrega barra de desplazamiento vertical si es necesario */
+}
+
+/* Media query para resoluciones de celular */
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 100%; /* Ocupa toda la pantalla a lo ancho */
+    max-width: none; /* Elimina el máximo ancho del modal */
+    height: 100%; /* Ocupa toda la pantalla a lo alto */
+    max-height: none; /* Elimina el máximo alto del modal */
+  }
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+#ocultarModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#ocultarModal:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+    0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+button {
+  cursor: pointer;
+}
+.modal-footer,
+.modal-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-register {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#mostrarModal {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  /* Estilos personalizados */
+  display: inline-block;
+  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+  color: white; /* Texto en color azul */
+  text-decoration: none; /* Quita la decoración de texto */
+  transition: color 0.3s; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover */
+#mostrarModal:hover {
+  font-weight: bold;
+}
+.custom-checkbox {
+  display: flex;
+}
+.custom-checkbox input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
