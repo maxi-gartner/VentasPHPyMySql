@@ -6,6 +6,7 @@ INCLUDE ('layout/nav.php');
 INCLUDE ('layout/sidebar.php');
 INCLUDE ('APP/alerts.php');
 
+
 ?>
 
   <!-- Contenido (titulo) -->
