@@ -1,31 +1,34 @@
 .containerModal {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
 
 .modal {
-  background-color: rgba(240, 248, 255, 0.9);
-  padding: 10px;
+  background-color: #fff;
+  padding: 20px;
   z-index: 1;
   border-radius: 10px;
-  width: 34%; /* Ocupa el 34% de la pantalla a lo ancho */
-  max-width: 500px; /* Máximo ancho del modal */
-  height: 80vh; /* Ocupa el 80% de la pantalla a lo alto */
-  max-height: 80vh; /* Máximo alto del modal */
-  overflow-y: auto; /* Agrega barra de desplazamiento vertical si es necesario */
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
-/* Media query para resoluciones de celular */
 @media screen and (max-width: 767px) {
   .modal {
-    width: 100%; /* Ocupa toda la pantalla a lo ancho */
-    max-width: none; /* Elimina el máximo ancho del modal */
-    height: 100%; /* Ocupa toda la pantalla a lo alto */
-    max-height: none; /* Elimina el máximo alto del modal */
+    width: 90%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
   }
 }
 
@@ -82,12 +85,11 @@ button {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  /* Estilos personalizados */
   display: inline-block;
-  padding: 10px 20px; /* Ajusta el padding según sea necesario */
-  color: white; /* Texto en color azul */
-  text-decoration: none; /* Quita la decoración de texto */
-  transition: color 0.3s; /* Transición suave para el efecto hover */
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 /* Efecto hover */
@@ -100,4 +102,14 @@ button {
 .custom-checkbox input[type="checkbox"] {
   width: 15px;
   height: 15px;
+  margin-right: 10px;
+}
+.custom-checkbox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.containerVerAqui {
+  display: flex;
+  justify-content: end;
+  width: 100%;
 }

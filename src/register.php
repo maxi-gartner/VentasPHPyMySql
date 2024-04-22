@@ -25,8 +25,43 @@ INCLUDE ('../APP/alerts.php'); ?>
 </head>
 <body>
   <div class="login">
-    <h1>Login</h1>            
-        <form action="../app/controllers/login/register_controller.php" method="post">
+    <h1>Registrarse</h1>            
+    <form action="../app/controllers/login/register_controller.php" method="post">
+            <div id="containerModal" class="containerModal <?php echo $modalVisible ? 'visible' : 'hidden' ?>">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><strong>Términos y Condiciones de Uso</strong></h5>
+                                </div>
+                                <div class="modal-body">
+                                    <strong>Bienvenido a Sistema de Ventas. </strong><br><br>
+                                    Estos términos y condiciones rigen el uso de este sitio web. Al acceder y utilizar este sitio web, aceptas cumplir con estos términos y condiciones en su totalidad. Si no estás de acuerdo con alguno de estos términos, por favor, no utilices este sitio web.<br><br>
+                                    <strong>Uso del Sitio</strong>
+                                    Este sitio web ha sido creado con el propósito de proporcionar un entorno de práctica y aprendizaje. No está destinado para fines comerciales, de venta o lucro. El contenido proporcionado en este sitio es exclusivamente con fines educativos y de práctica.<br><br>
+                                    <strong>Propiedad Intelectual</strong>
+                                    Todo el contenido, incluyendo pero no limitado a texto, gráficos, logotipos, imágenes, audio y video, son propiedad exclusiva de Gartner Maximiliano Ezequiel, programador Full Stack con experiencia en tecnologías MERN, SQL y PHP, a menos que se indique lo contrario. No se permite la reproducción, distribución o modificación del contenido sin el consentimiento explícito del autor.<br><br>
+                                    <strong>Limitación de Responsabilidad</strong>
+                                    El autor y creador de este sitio web, Gartner Maximiliano Ezequiel, no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que surja del uso o la imposibilidad de utilizar este sitio web.<br><br>
+                                    <strong>Modificaciones de los Términos y Condiciones</strong>
+                                    Gartner Maximiliano Ezequiel se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Se recomienda revisar periódicamente estos términos para estar al tanto de cualquier cambio. El uso continuado de este sitio web después de la publicación de cambios constituye la aceptación de dichos cambios.<br><br>
+                                    <strong>Legislación Aplicable</strong>
+                                    Estos términos y condiciones se rigen por las leyes de [país] y cualquier disputa relacionada con estos términos y condiciones estará sujeta a la jurisdicción exclusiva de los tribunales de [ciudad].
+                                    Al acceder y utilizar este sitio web, aceptas estos términos y condiciones en su totalidad.
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="agreeTerms" name="terms" value="agree" required>
+                                    <label for="agreeTerms">
+                                        Acepto los terminos y condiciones
+                                    </label>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="ocultarModal" class="ocultarModal" type="button" >Close</button>
+                                </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
             <div class="input-group mb-3">
             <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombre" required>
             <div class="input-group-append">
@@ -70,14 +105,8 @@ INCLUDE ('../APP/alerts.php'); ?>
             <div class="row">
             <div class="col-12">
                 <div class="check-terms">
-                    <div class="custom-checkbox">
-                        <input type="checkbox" id="agreeTerms" name="terms" value="agree" required>
-                        <label for="agreeTerms">
-                            Acepto los terminos y condiciones
-                        </label>
-                    </div>
-                    <button id="mostrarModal" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Ver aquí
-                </button>
+                    <button id="mostrarModal" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Ver y aceptar los Términos y Condiciones para registrarse <span style="font-weight: bolder;">AQUÍ</span>
+                    </button>
                 </div>
             </div>
             <div class="col-12 mt-3 mb-3">
@@ -86,42 +115,12 @@ INCLUDE ('../APP/alerts.php'); ?>
             </div>
         </form>
       <div class="col-12 text-end">
-                <a href="./login.php" class="text-center mt-3 ">Ya tengo una cuenta</a>
+                <a href="./login.php" style="color: white; text-decoration: none;" class="text-center mt-3 ">Ya tengo una cuenta</a>
             </div>
             </div>
         </div>
     </div>
     <?php $modalVisible = false ?>
-    <div id="containerModal" class="containerModal <?php echo $modalVisible ? 'visible' : 'hidden' ?>">
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel"><strong>Términos y Condiciones de Uso</strong></h5>
-                        </div>
-                        <div class="modal-body">
-                            <strong>Bienvenido a Sistema de Ventas. </strong><br><br>
-                            Estos términos y condiciones rigen el uso de este sitio web. Al acceder y utilizar este sitio web, aceptas cumplir con estos términos y condiciones en su totalidad. Si no estás de acuerdo con alguno de estos términos, por favor, no utilices este sitio web.<br><br>
-                            <strong>Uso del Sitio</strong>
-                            Este sitio web ha sido creado con el propósito de proporcionar un entorno de práctica y aprendizaje. No está destinado para fines comerciales, de venta o lucro. El contenido proporcionado en este sitio es exclusivamente con fines educativos y de práctica.<br><br>
-                            <strong>Propiedad Intelectual</strong>
-                            Todo el contenido, incluyendo pero no limitado a texto, gráficos, logotipos, imágenes, audio y video, son propiedad exclusiva de Gartner Maximiliano Ezequiel, programador Full Stack con experiencia en tecnologías MERN, SQL y PHP, a menos que se indique lo contrario. No se permite la reproducción, distribución o modificación del contenido sin el consentimiento explícito del autor.<br><br>
-                            <strong>Limitación de Responsabilidad</strong>
-                            El autor y creador de este sitio web, Gartner Maximiliano Ezequiel, no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que surja del uso o la imposibilidad de utilizar este sitio web.<br><br>
-                            <strong>Modificaciones de los Términos y Condiciones</strong>
-                            Gartner Maximiliano Ezequiel se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Se recomienda revisar periódicamente estos términos para estar al tanto de cualquier cambio. El uso continuado de este sitio web después de la publicación de cambios constituye la aceptación de dichos cambios.<br><br>
-                            <strong>Legislación Aplicable</strong>
-                            Estos términos y condiciones se rigen por las leyes de [país] y cualquier disputa relacionada con estos términos y condiciones estará sujeta a la jurisdicción exclusiva de los tribunales de [ciudad].
-                            Al acceder y utilizar este sitio web, aceptas estos términos y condiciones en su totalidad.
-
-                        </div>
-                        <div class="modal-footer">
-                            <button id="ocultarModal" class="ocultarModal" type="button" >Close</button>
-                        </div>
-                        </div>
-                    </div>
-        </div>
-    </div>
     <script>
         let modal = document.getElementById('containerModal');
         let showButton = document.getElementById('mostrarModal');
