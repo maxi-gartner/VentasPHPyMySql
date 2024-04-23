@@ -26,7 +26,7 @@ try {
     echo "Error al conectar a la base de datos: " . $e->getMessage();
 }
 
-$URL = "https://sistemadeventas-4ac1bd780680.herokuapp.com/";
+$URL = $_ENV['RUTA'];
 
 date_default_timezone_set('America/Argentina/Buenos_Aires');
 $fechaHora = date('Y-m-d H:i:s');
