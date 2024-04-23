@@ -2,10 +2,10 @@
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Anything you want
+      All rights reserved &copy; Gartner Maximiliano
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2024-2025 <a href="https://adminlte.io">Sistema de ventas</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2024-2025 <a href="https://adminlte.io">Sistema de ventas</a>.</strong> 
   </footer>
 </div>
 <!-- ./wrapper -->
