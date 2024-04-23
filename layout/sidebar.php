@@ -92,7 +92,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas_roles/roles.php" class="nav-link">
+                <a href="<?php echo $URL;  ?>/paginas_categorias/categorias.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Categorías</p>
                 </a>
