@@ -25,10 +25,8 @@ dist-ssr
 *.sln
 *.sw?
 
-.env
 
 node_modules
-.env
 .vscode
 package-lock.json
 .vercel

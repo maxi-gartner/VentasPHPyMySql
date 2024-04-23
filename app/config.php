@@ -1,5 +1,5 @@
 <?php
-/* $RUTA = __DIR__ . "/../"; // Obtener la ruta absoluta del directorio padre
+$RUTA = __DIR__ . "/../"; // Obtener la ruta absoluta del directorio padre
 require_once($RUTA . 'vendor/autoload.php'); // Incluir el archivo usando la ruta absoluta
 
 use Dotenv\Dotenv;
@@ -11,11 +11,7 @@ define('SERVIDOR', $_ENV['SERVIDOR']);
 define('USUARIO', $_ENV['USUARIO']);
 define('PASSWORD', $_ENV['PASSWORD']);
 define('BD', $_ENV['BD']);
- */
-define('SERVIDOR', "mysql5049.site4now.net");
-define('USUARIO', "aa7e68_dbinfo");
-define('PASSWORD', "asd12345678");
-define('BD', "db_aa7e68_dbinfo");
+
 
 $servidor = "mysql:dbname=" . BD . ";host=" . SERVIDOR;
 
