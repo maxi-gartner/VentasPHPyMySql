@@ -32,6 +32,7 @@ INCLUDE ('../app/alerts.php');
                 <tr>
                     <th><center>Nro</center></th>
                     <th><center>Nombre</center></th>
+                    <th><center>Categoria</center></th>
                     <th><center>Precio</center></th>
                     <th><center>Stock</center></th>
                     <th><center>Marca</center></th>
@@ -45,6 +46,7 @@ INCLUDE ('../app/alerts.php');
                         $id_producto = $dato_producto['id'];
                         $nro = $contador += 1;
                         $nombre = $dato_producto['nombre'];
+                        $categoria = $dato_producto['categoria'];
                         $precio = $dato_producto['precio'];
                         $stock = $dato_producto['stock'];
                         $marca = $dato_producto['marca'];
@@ -53,6 +55,7 @@ INCLUDE ('../app/alerts.php');
                         <tr>
                         <td><center><?= $nro ?></center></td></td>
                         <td><?= ucfirst($nombre) ?></td>
+                        <td><?= ucfirst($categoria) ?></td>
                         <td>$<?= $precio ?></td>
                         <td><?= $stock ?></td>
                         <td><?= ucfirst($marca) ?></td>
@@ -60,12 +63,12 @@ INCLUDE ('../app/alerts.php');
                         <td>
                             <center>
                             <div class="btn-group">
-                            <a href="<?php echo $URL ?>paginas_productos/details_user.php?id=<?= $id_producto ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
-                            <a href="<?php echo $URL ?>paginas_productos/update_user.php?id=<?= $id_producto ?>" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
-                            <form action="../app/controllers/products/delete_user_controller.php" method="post" style="display: inline;">
+                            <a  href="#" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
+                            <a  href="#" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
+                            <form action="../app/controllers/products/delete_user_controller.php" method="post" style="display: inline;"disabled>
                                 <input type="hidden" name="id_usuario" value="<?= $id_producto ?>">
                                 <input type="hidden" name="nombre_usuario" value="<?= $nombre ?>">
-                                <button type="button" class="btn btn-danger deleteButton" value="<?= $nombre ?>" id="<?php echo $id_producto ?>"><i class="fas fa-trash"></i> Borrar</button>
+                                <button type="button" class="btn btn-danger deleteButton" value="<?= $nombre ?>" id="<?php echo $id_producto ?>"disabled><i class="fas fa-trash"></i> Borrar</button>
                             </form>
                             </div>
                             </center>

@@ -75,7 +75,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas_almacen/agregar_producto.php" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Agregar Producto</p>
                 </a>
@@ -98,7 +98,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas_roles/create_roles.php" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Creacion de Categorías</p>
                 </a>
