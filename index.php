@@ -8,78 +8,190 @@ INCLUDE ('APP/alerts.php');
 
 
 ?>
+  <link rel="stylesheet" href="./public/css/index.css">
 
   <!-- Contenido (titulo) -->
   <div class="content-wrapper">
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-12">
-            <h1 class="m-0">Starter Page</h1>
-          </div>
         </div>
       </div>
     </div>
     <!-- Main content -->
-    <div class="content">
-            <div class="row">
-              <div class="col-lg-3 col-6">
-
-              <div class="small-box bg-info">
-              <div class="inner">
-              <h3>150</h3>
-              <p>New Orders</p>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <div class="d-flex flex-wrap justify-content-evenly">
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-teal order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="fa fa-cart-plus"></i>
+                    <h6 class="text-lg">Realizar venta</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-lime order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="bi bi-shop-window"></i>
+                    <h6 class="text-lg">Inventario</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-              <div class="icon">
-              <i class="ion ion-bag"></i>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-indigo order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="bi bi-bookmark-check-fill"></i>
+                    <h6 class="text-lg">Órds. preparadas</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-cyan order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="bi bi-bookmark-check"></i>
+                    <h6 class="text-lg">Órds. Pendientes</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-magenta order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="bi bi-people-fill"></i>
+                    <h6 class="text-lg">Mis Clientes</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-
-              <div class="col-lg-3 col-6">
-
-              <div class="small-box bg-success">
-              <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
-              <p>Bounce Rate</p>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-amber order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="bi bi-building"></i>
+                    <h6 class="text-lg">Cuenta Corriente</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-              <div class="icon">
-              <i class="ion ion-stats-bars"></i>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-deep-orange order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-box"></i>
+                    <h6 class="text-lg">Caja</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-purple order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="bi bi-bar-chart"></i>
+                    <h6 class="text-lg">Graficas</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-orange order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <h6 class="text-lg">Reportes</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-
-              <div class="col-lg-3 col-6">
-
-              <div class="small-box bg-warning">
-              <div class="inner">
-              <h3>44</h3>
-              <p>User Registrations</p>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-red order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-barcode"></i>
+                    <h6 class="text-lg">Codigos</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-              <div class="icon">
-              <i class="ion ion-person-add"></i>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-brown order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h6 class="text-lg">Movimientos</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-olive order-card" style="min-height: 180px; width: 100%;">
+                <div class="card-block">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-cog"></i>
+                    <h6 class="text-lg">Ajustes</h6>
+                  </div>
+                  <div class="mt-2">
+                    <p class="m-b-0">Ingreso Bruto<span class="f-right">****</span></p>
+                    <p class="m-b-0">Total de Venta<span class="f-right">****</span></p>
+                  </div>
+                </div>
               </div>
-              </div>
-
-              <div class="col-lg-3 col-6">
-
-              <div class="small-box bg-danger">
-              <div class="inner">
-              <h3>65</h3>
-              <p>Unique Visitors</p>
-              </div>
-              <div class="icon">
-              <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-              </div>
-              </div>
+          </div>
     </div>
+  </div>
   </div>
 
 <?php 

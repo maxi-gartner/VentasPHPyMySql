@@ -1,0 +1,80 @@
+body {
+  background: #fafafa;
+}
+.order-card {
+  color: #fff;
+}
+
+.bg-c-teal {
+  background: linear-gradient(45deg, #4dc9ff, #375f6e);
+}
+
+.bg-c-lime {
+  background: linear-gradient(45deg, #aaff4d, #667a3d);
+}
+
+.bg-c-indigo {
+  background: linear-gradient(45deg, #4d4dff, #3c3c77);
+}
+
+.bg-c-cyan {
+  background: linear-gradient(45deg, #4dffd6, #3b796c);
+}
+
+.bg-c-magenta {
+  background: linear-gradient(45deg, #ff4d88, #7c3d52);
+}
+
+.bg-c-amber {
+  background: linear-gradient(45deg, #ffca28, #695c25);
+}
+
+.bg-c-deep-orange {
+  background: linear-gradient(45deg, #ff6f00, #754a1e);
+}
+
+.bg-c-purple {
+  background: linear-gradient(45deg, #8a6eff, #463d6d);
+}
+
+.bg-c-orange {
+  background: linear-gradient(45deg, #edff4d, #555c1c);
+}
+
+.bg-c-red {
+  background: linear-gradient(45deg, #ff4d4d, #552b2b);
+}
+
+.bg-c-brown {
+  background: linear-gradient(45deg, #a6814d, #4d4232);
+}
+
+.bg-c-olive {
+  background: linear-gradient(45deg, #7f9f5e, #a9bc8f);
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  border: none;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+  padding: 25px;
+}
+
+.order-card i {
+  font-size: 26px;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
