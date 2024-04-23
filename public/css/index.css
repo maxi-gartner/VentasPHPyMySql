@@ -78,3 +78,21 @@ body {
 .f-right {
   float: right;
 }
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+i,
+h6,
+p,
+span {
+  pointer-events: none;
+}
+
+.card:hover i,
+.card:hover h6,
+.card:hover p,
+.card:hover span {
+  pointer-events: auto;
+}

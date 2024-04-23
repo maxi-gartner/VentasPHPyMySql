@@ -22,7 +22,7 @@ INCLUDE ('APP/alerts.php');
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="container">
     <div class="d-flex flex-wrap justify-content-evenly">
-        <div class="col-md-4 col-xl-3">
+        <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-teal order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -35,8 +35,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 col-xl-3">
+        </a>
+        <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-lime order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -49,8 +49,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-indigo order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -63,8 +63,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-cyan order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -77,8 +77,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-magenta order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -91,8 +91,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-amber order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -105,8 +105,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-deep-orange order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -119,8 +119,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-purple order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -133,8 +133,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-orange order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -147,8 +147,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-red order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -161,8 +161,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-brown order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -175,8 +175,8 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4 col-xl-3">
+          </a>
+          <a href="#" class="col-md-4 col-xl-3">
             <div class="card bg-c-olive order-card" style="min-height: 180px; width: 100%;">
                 <div class="card-block">
                   <div class="d-flex justify-content-between">
@@ -189,7 +189,7 @@ INCLUDE ('APP/alerts.php');
                   </div>
                 </div>
               </div>
-          </div>
+          </a>
     </div>
   </div>
   </div>
