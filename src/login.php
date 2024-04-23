@@ -3,9 +3,6 @@ INCLUDE ('../APP/config.php');
 INCLUDE ('../APP/alerts.php');
 
 
-echo var_dump($_ENV);
-
-
 session_start();
 
 if(isset($_SESSION['sesion_email'])) {
