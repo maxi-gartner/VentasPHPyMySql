@@ -61,29 +61,6 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-layer-group"></i>
-              <p>
-                Categorías
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas_roles/roles.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lista de Categorías</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas_roles/create_roles.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Creacion de Categorías</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tags"></i>
               <p>
                 Productos
@@ -92,15 +69,38 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas_roles/roles.php" class="nav-link">
+                <a href="<?php echo $URL;  ?>/paginas_almacen/productos.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Productos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>/paginas_roles/create_roles.php" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Creacion de Productos</p>
+                  <p>Agregar Producto</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-layer-group"></i>
+              <p>
+                Categorías
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo $URL;  ?>/paginas_categorias/categorias.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista de Categorías</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Creacion de Categorías</p>
                 </a>
               </li>
             </ul>

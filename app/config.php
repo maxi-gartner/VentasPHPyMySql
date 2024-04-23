@@ -12,6 +12,7 @@ define('USUARIO', $_ENV['USUARIO']);
 define('PASSWORD', $_ENV['PASSWORD']);
 define('BD', $_ENV['BD']);
 
+
 $servidor = "mysql:dbname=" . BD . ";host=" . SERVIDOR;
 
 try {
