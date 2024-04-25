@@ -26,7 +26,7 @@ try {
     echo "Error al conectar a la base de datos: " . $e->getMessage();
 }
 
-$URL = "https://sistemadeventasapp-09d252a9317d.herokuapp.com/";
+$URL = "http://localhost/VentasPHPyMySql/";
 
 date_default_timezone_set('America/Argentina/Buenos_Aires');
 $fechaHora = date('Y-m-d H:i:s');
