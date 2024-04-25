@@ -21,12 +21,12 @@ if($usuarios && (password_verify($password_user, $password_user_tabla))){
     session_start();
     $_SESSION['sesion_email'] = $email;
     //echo "Ingreso correcto";
-    header('Location:' .$URL. 'index.php');
+    header('Location: ../../../index.php');
     session_start();
     $_SESSION['login_success'] = "Bienvenido ".ucfirst(strtolower($nombres))." ".ucfirst(strtolower($apellido));
 }else{
     session_start();
     $_SESSION['mensaje_error'] = "Usuario o contrasenya incorrectos";
-    header('Location:' .$URL. 'src/login.php');
+    header('Location: ../../../src/login.php');
 }
 
