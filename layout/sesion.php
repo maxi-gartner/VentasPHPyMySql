@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+    $_SESSION['sesion_email'] = "maxi.gartner@hotmail.com";
 
 if(isset($_SESSION['sesion_email'])) {
     $email_sesion = $_SESSION['sesion_email'];
