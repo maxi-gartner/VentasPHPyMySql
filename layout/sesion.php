@@ -1,8 +1,7 @@
 <?php
 
-/* session_start();
-
 if(isset($_SESSION['sesion_email'])) {
+  //echo "si existe sesion de " . $_SESSION['sesion_email'];
   $email_sesion = $_SESSION['sesion_email'];
   $sql = "SELECT * FROM tb_usuarios WHERE email = '$email_sesion' ";
   $query = $pdo->prepare($sql);
@@ -20,4 +19,4 @@ if($usuarios){
 }else{
   echo "no existe sesion";
   header('Location:' .$URL. 'src/login.php');
-} */
+}

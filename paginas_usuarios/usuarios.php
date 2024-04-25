@@ -1,6 +1,5 @@
 <?php
 INCLUDE ('../APP/config.php');
-INCLUDE ('../layout/sesion.php');
 INCLUDE ('../layout/header.php');
 INCLUDE ('../layout/nav.php');
 INCLUDE ('../layout/sidebar.php');
