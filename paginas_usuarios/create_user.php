@@ -72,7 +72,7 @@ include ('../app/controllers/roles/read_roles_controller.php');
         </div>
 
         <div class="card-footer">
-            <a href="<?php echo $URL?>paginas_usuarios/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
+            <a href="../paginas_usuarios/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>

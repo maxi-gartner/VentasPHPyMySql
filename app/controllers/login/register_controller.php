@@ -15,7 +15,7 @@ if($password_user === $password_repeat){
 }else{
     session_start();
     $_SESSION['mensaje_error'] = "Las contraseñas no coinciden ";
-    header('Location:' .$URL. 'src/register.php');
+    header('Location: ../../../src/register.php');
 }
 
  $sentencia = $pdo->prepare("INSERT INTO tb_usuarios 
@@ -31,4 +31,4 @@ $sentencia->bindParam(':fyh_creacion', $fechaHora);
 $sentencia->execute();
 session_start();
     $_SESSION['mensaje_success'] = "Usuario creado con exito";
-    header('Location:' .$URL. 'src/login.php');
+    header('Location: ../../../src/login.php');

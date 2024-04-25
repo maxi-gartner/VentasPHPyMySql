@@ -20,7 +20,7 @@ if($usuario && password_verify($password_user, $usuario['password_user'])){
 } else {
     session_start();
     $_SESSION['mensaje_error'] = "Usuario o contraseña incorrectos";
-    header('Location: ' . $URL . 'src/login.php');
+    header('Location: ../../../src/login.php');
     exit(); // Terminar la ejecución del script después de redirigir
 }
 ?>

@@ -49,8 +49,8 @@ INCLUDE ('../app/alerts.php');
                         <td>
                             <center>
                             <div class="btn-group">
-                            <a href="<?php echo $URL ?>paginas_roles/details_roles.php?id=<?= $id_rol ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
-                            <a href="<?php echo $URL ?>paginas_roles/update_roles.php?id=<?= $id_rol ?>" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
+                            <a href="../paginas_roles/details_roles.php?id=<?= $id_rol ?>" type="button" class="btn btn-info"><i class="fas fa-eye"></i> Ver</a>
+                            <a href="../paginas_roles/update_roles.php?id=<?= $id_rol ?>" type="button" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> Editar</a>
                             <form action="../app/controllers/roles/delete_roles_controller.php" method="post" style="display: inline;">
                                 <input type="hidden" name="id_rol" value="<?= $id_rol ?>">
                                 <button type="button" class="btn btn-danger deleteButton" value="<?= $rol ?>" id="<?php echo $id_rol ?>"><i class="fas fa-trash"></i> Borrar</button>

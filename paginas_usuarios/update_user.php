@@ -68,7 +68,7 @@ INCLUDE ('../app/controllers/usuarios/update_user_read.php');
         </div>
 
         <div class="card-footer">
-            <a href="<?php echo $URL?>paginas_usuarios/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
+            <a href="../paginas_usuarios/usuarios.php" class="btn btn-secondary" id="">Cancelar</a>
             <button type="submit" class="btn btn-warning">Actualizar</button>
         </div>
     </form>

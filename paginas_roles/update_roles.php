@@ -38,7 +38,7 @@ INCLUDE ('../app/controllers/roles/update_roles_read.php');
             <input type="text" class="form-control" name="restricciones" value="<?php echo $restricciones_get; ?>">
         </div>
         <div class="card-footer">
-            <a href="<?php echo $URL?>paginas_roles/roles.php" class="btn btn-secondary" id="">Cancelar</a>
+            <a href="../paginas_roles/roles.php" class="btn btn-secondary" id="">Cancelar</a>
             <button type="submit" class="btn btn-warning">Actualizar</button>
         </div>
     </form>

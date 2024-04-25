@@ -23,13 +23,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>paginas_usuarios/usuarios.php" class="nav-link">
+                <a href="../paginas_usuarios/usuarios.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Usuarios</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>paginas_usuarios/create_user.php" class="nav-link">
+                <a href="../paginas_usuarios/create_user.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Creacion de usuarios</p>
                 </a>
@@ -46,13 +46,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>paginas_roles/roles.php" class="nav-link">
+                <a href="../paginas_roles/roles.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Roles</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>paginas_roles/create_roles.php" class="nav-link">
+                <a href="../paginas_roles/create_roles.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Creacion de rol</p>
                 </a>
@@ -69,7 +69,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>paginas_almacen/productos.php" class="nav-link">
+                <a href="../paginas_almacen/productos.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Productos</p>
                 </a>
@@ -92,7 +92,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo $URL;  ?>paginas_categorias/categorias.php" class="nav-link">
+                <a href="../paginas_categorias/categorias.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Categorías</p>
                 </a>
@@ -106,7 +106,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="<?php echo $URL;  ?>app/controllers/login/cerrar_sesion.php" class="nav-link" style= "background-color: #a71002;">
+            <a href="../app/controllers/login/cerrar_sesion.php" class="nav-link" style= "background-color: #a71002;">
               <i class="nav-icon fas fa-door-closed"></i>
               <p>
                 Cerrar Sesion

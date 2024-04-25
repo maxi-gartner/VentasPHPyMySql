@@ -36,7 +36,7 @@ INCLUDE ('../app/alerts.php');
                     <input type="text" class="form-control" name="restricciones" placeholder="Ingresar restricciones" required>
                 </div>
                 <div class="card-footer">
-                    <a href="<?php echo $URL?>paginas_roles/roles.php" class="btn btn-secondary" id="">Cancelar</a>
+                    <a href="../paginas_roles/roles.php" class="btn btn-secondary" id="">Cancelar</a>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>

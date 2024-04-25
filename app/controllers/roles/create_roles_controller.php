@@ -15,4 +15,4 @@ $sentencia->bindParam(':fyh_creacion', $fechaHora);
 $sentencia->execute();
 session_start();
     $_SESSION['mensaje_success'] = "Rol creado con exito";
-    header('Location:' .$URL. 'paginas_roles/roles.php');
+    header('Location: ../../../paginas_roles/roles.php');
