@@ -20,7 +20,8 @@ if($usuario && password_verify($password_user, $usuario['password_user'])){
 } else {
     session_start();
     $_SESSION['mensaje_error'] = "Usuario o contraseña incorrectos";
-    header('Location: ' . $URL . 'src/login.php');
+    //header('Location: ' . $URL . 'src/login.php');
+    header('Location: https://sistemadeventasapp-b723da2b8729.herokuapp.com/index.php');
     exit(); // Terminar la ejecución del script después de redirigir
 }
 ?>
