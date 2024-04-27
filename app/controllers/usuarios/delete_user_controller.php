@@ -9,7 +9,7 @@ $id_usuario = $_POST['id_usuario'];
         
         if ($consulta->execute()) {
             // El usuario fue eliminado exitosamente
-            header('Location:' .$URL. 'paginas_usuarios/usuarios.php');
+            header('Location:' .$URL. 'paginas_usuarios/usuarios.html');
         } else {
             // Ocurrió un error al eliminar el usuario
             echo "Ocurrió un error al intentar eliminar el usuario.";

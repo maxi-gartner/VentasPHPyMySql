@@ -26,4 +26,4 @@ $sentencia->execute();
 
 session_start();
 $_SESSION['mensaje_success'] = "Se actualizaron los datos del rol ".$nombre;
-header('Location:' . $URL . 'paginas_roles/roles.php');
+header('Location:' . $URL . 'paginas_roles/roles.html');

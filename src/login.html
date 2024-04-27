@@ -6,7 +6,7 @@ INCLUDE ('../APP/alerts.php');
 session_start();
 
 if(isset($_SESSION['sesion_email'])) {
-  header('Location:' .$URL. 'index.php');
+  header('Location:' .$URL. 'index.html');
 }else{
   
 }
@@ -37,7 +37,7 @@ if(isset($_SESSION['sesion_email'])) {
         <a class="text-white text-decoration-none" href="forgot-password.html">Olvidé mi contraseña</a>
       </p> -->
       <p class="mb-0">
-        <a style="color: white; text-decoration: none;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='white'" href="./register.php">Registrarme</a>
+        <a style="color: white; text-decoration: none;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='white'" href="./register.html">Registrarme</a>
       </p>
   </div>
   </body>

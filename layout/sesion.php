@@ -32,12 +32,12 @@ if(isset($_SESSION['sesion_email'])) {
     } else {
         // Manejo de sesión no definida
         echo "La variable de sesión está vacía";
-        header('Location:' . $URL . 'src/login.php');
+        header('Location:' . $URL . 'src/login.html');
         exit(); // Terminar la ejecución del script después de redirigir
     }
 } else {
     // Manejo de sesión no existente
     echo "No existe sesión";
-    header('Location:' . $URL . 'src/login.php');
+    header('Location:' . $URL . 'src/login.html');
     exit(); // Terminar la ejecución del script después de redirigir
 }

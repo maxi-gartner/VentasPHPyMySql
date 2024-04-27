@@ -9,7 +9,7 @@ $id_rol = $_POST['id_rol'];
         
         if ($consulta->execute()) {
             // El usuario fue eliminado exitosamente
-            header('Location:' .$URL. 'paginas_roles/roles.php');
+            header('Location:' .$URL. 'paginas_roles/roles.html');
         } else {
             // Ocurrió un error al eliminar el usuario
             echo "Ocurrió un error al intentar eliminar el usuario.";

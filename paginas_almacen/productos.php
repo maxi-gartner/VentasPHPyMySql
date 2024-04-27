@@ -1,8 +1,8 @@
 <?php
 INCLUDE ('../APP/config.php');
 INCLUDE ('../layout/sesion.php');
-INCLUDE ('../layout/header.php');
-INCLUDE ('../layout/nav.php');
+INCLUDE ('../layout/header.html');
+INCLUDE ('../layout/nav.html');
 INCLUDE ('../layout/sidebar.php');
 INCLUDE ('../app/controllers/products/read_products_controller.php');
 
@@ -83,7 +83,7 @@ INCLUDE ('../app/alerts.php');
     </div>
 </div>
 
-<?php INCLUDE('../layout/footer.php'); ?>
+<?php INCLUDE('../layout/footer.html'); ?>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const deleteButtons = document.querySelectorAll('.deleteButton');
